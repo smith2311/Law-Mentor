@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $updateQuery->bindParam(":email", $email);
         $updateQuery->execute();
 
-        $reset_link = "http://192.168.237.243/LMS_backend/frontend/reset_password.php?reset_token=" . $reset_token;
+        $reset_link = "https://github.com/smith2311/Law-Mentor/tree/main/frontend/reset_password.php?reset_token=" . $reset_token;
 
         // Send the reset email
         $mail = new PHPMailer(true);
